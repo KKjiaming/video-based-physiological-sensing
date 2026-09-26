@@ -1,0 +1,10 @@
+{
+  "url": "https://people.csail.mit.edu/mrub/evm/video/face.mp4",
+  "publisher": "MIT CSAIL / Eulerian Video Magnification authors",
+  "bytes": 1639646,
+  "sha256": "fab07662ae910808b53f8e2a9150ec88beb06feca4a38c2d8d37b92d84ff4aa5",
+  "ground_truth": null,
+  "purpose": "local pretrained inference demonstration",
+  "attribution": "Wu et al., ACM TOG/SIGGRAPH 2012",
+  "access_page": "https://people.csail.mit.edu/mrub/evm/"
+}

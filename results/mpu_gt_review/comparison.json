@@ -1,0 +1,125 @@
+{
+  "kind": "single_public_sample_contact_ppg_evaluation",
+  "selection": "opening 121s, first four non-overlapping 30s windows",
+  "respiration": "no corresponding ground truth; not evaluated",
+  "synchronization": "publisher frame alignment; Count/60 matched source PTS; fixed zero lag, not independently calibrated",
+  "methods": {
+    "MTTS-CAN": {
+      "status": "evaluated",
+      "window_s": 30,
+      "band_hz": [
+        0.75,
+        2.5
+      ],
+      "valid_windows": 4,
+      "windows": [
+        {
+          "start_s": 0.0,
+          "end_exclusive_s": 30.0,
+          "status": "valid",
+          "predicted_per_min": 78.0,
+          "reference_waveform_derived_per_min": 78.0,
+          "error_per_min": 0.0,
+          "waveform_pearson_no_lag": -0.035904174507780565,
+          "device_hr_median_bpm_for_context": 80.0
+        },
+        {
+          "start_s": 30.0,
+          "end_exclusive_s": 60.0,
+          "status": "valid",
+          "predicted_per_min": 48.0,
+          "reference_waveform_derived_per_min": 78.0,
+          "error_per_min": -30.0,
+          "waveform_pearson_no_lag": 0.24164283172953535,
+          "device_hr_median_bpm_for_context": 80.0
+        },
+        {
+          "start_s": 60.0,
+          "end_exclusive_s": 90.0,
+          "status": "valid",
+          "predicted_per_min": 58.0,
+          "reference_waveform_derived_per_min": 72.0,
+          "error_per_min": -14.0,
+          "waveform_pearson_no_lag": 0.07033559540656556,
+          "device_hr_median_bpm_for_context": 76.0
+        },
+        {
+          "start_s": 90.0,
+          "end_exclusive_s": 120.0,
+          "status": "valid",
+          "predicted_per_min": 50.0,
+          "reference_waveform_derived_per_min": 104.0,
+          "error_per_min": -54.0,
+          "waveform_pearson_no_lag": 0.07796824244702238,
+          "device_hr_median_bpm_for_context": 72.0
+        }
+      ],
+      "metrics": {
+        "mae_per_min": 24.5,
+        "rmse_per_min": 31.670175244226233,
+        "bias_per_min": -24.5
+      },
+      "gt_median_interval_s": 0.01666666666665151,
+      "gt_max_interval_s": 0.016666666666765195
+    },
+    "BigSmall": {
+      "status": "evaluated",
+      "window_s": 30,
+      "band_hz": [
+        0.75,
+        2.5
+      ],
+      "valid_windows": 4,
+      "windows": [
+        {
+          "start_s": 0.0,
+          "end_exclusive_s": 30.0,
+          "status": "valid",
+          "predicted_per_min": 100.0,
+          "reference_waveform_derived_per_min": 78.0,
+          "error_per_min": 22.0,
+          "waveform_pearson_no_lag": 0.07309086880631267,
+          "device_hr_median_bpm_for_context": 80.0
+        },
+        {
+          "start_s": 30.0,
+          "end_exclusive_s": 60.0,
+          "status": "valid",
+          "predicted_per_min": 100.0,
+          "reference_waveform_derived_per_min": 78.0,
+          "error_per_min": 22.0,
+          "waveform_pearson_no_lag": -0.026349572171199195,
+          "device_hr_median_bpm_for_context": 80.0
+        },
+        {
+          "start_s": 60.0,
+          "end_exclusive_s": 90.0,
+          "status": "valid",
+          "predicted_per_min": 100.0,
+          "reference_waveform_derived_per_min": 72.0,
+          "error_per_min": 28.0,
+          "waveform_pearson_no_lag": -0.04846504770874855,
+          "device_hr_median_bpm_for_context": 76.0
+        },
+        {
+          "start_s": 90.0,
+          "end_exclusive_s": 120.0,
+          "status": "valid",
+          "predicted_per_min": 100.0,
+          "reference_waveform_derived_per_min": 104.0,
+          "error_per_min": -4.0,
+          "waveform_pearson_no_lag": 0.013886182250837393,
+          "device_hr_median_bpm_for_context": 72.0
+        }
+      ],
+      "metrics": {
+        "mae_per_min": 19.0,
+        "rmse_per_min": 21.02379604162864,
+        "bias_per_min": 17.0
+      },
+      "gt_median_interval_s": 0.01666666666665151,
+      "gt_max_interval_s": 0.016666666666765195
+    }
+  },
+  "reference_caveat": "Contact-PPG spectral HR and device HR disagree in the final window; device HR smoothing/latency and PPG quality are not independently resolved. Keep all windows, report errors descriptively, not as a validated benchmark."
+}

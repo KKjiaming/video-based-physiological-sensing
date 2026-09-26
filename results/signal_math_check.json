@@ -1,0 +1,7 @@
+{
+  "kind": "synthetic_software_check_only",
+  "sparse_dense_detrend_max_abs_error": 3.097591627643226e-13,
+  "pulse_synthetic_rate_per_min": 72.0,
+  "resp_synthetic_rate_per_min": 15.0,
+  "passed": true
+}

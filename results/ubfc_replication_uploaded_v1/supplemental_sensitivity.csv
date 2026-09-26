@@ -1,0 +1,7 @@
+subject,start_s,end_exclusive_s,status,hann_bpm,boxcar_bpm,top_local_peak_bpm,second_local_peak_bpm,second_to_first_power_ratio,peak_separation_bpm,competing_peak_flag,window_function_switch_flag,device_hr_median_bpm
+subject1,0,30,supplemental_sensitivity_only,106.0,108.0,106.0,112.0,0.1459386065892479,6.000000000000005,False,False,104.0
+subject1,30,60,unavailable_incomplete_30s_window,,,,,,,,,
+subject4,0,30,supplemental_sensitivity_only,98.0,106.0,98.0,116.0,0.9957835119511764,18.000000000000004,True,True,113.0
+subject4,30,60,unavailable_incomplete_30s_window,,,,,,,,,
+subject5,0,30,supplemental_sensitivity_only,98.0,100.0,98.0,110.0,0.014789869260732988,11.999999999999996,False,False,99.0
+subject5,30,60,unavailable_incomplete_30s_window,,,,,,,,,

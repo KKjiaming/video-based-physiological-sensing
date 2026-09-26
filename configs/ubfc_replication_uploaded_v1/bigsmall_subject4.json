@@ -1,0 +1,32 @@
+{
+  "experiment": "bigsmall_ubfc_uploaded_subject4",
+  "video": "data/ubfc_subject4/input_30hz_replication_v1.avi",
+  "output_dir": "results/ubfc_replication_uploaded_v1/subject4/bigsmall",
+  "fps": 25.0,
+  "crop_xywh": [
+    220,
+    95,
+    280,
+    280
+  ],
+  "resampling": "nearest_source_pts_to_uniform_25_hz",
+  "big_size": 144,
+  "small_size": 9,
+  "frame_depth": 3,
+  "batch_size": 30,
+  "detrend_lambda": 100,
+  "filter_order": 1,
+  "pulse_band_hz": [
+    0.6,
+    3.3
+  ],
+  "resp_band_hz": [
+    0.13,
+    0.5
+  ],
+  "spectrum_window": "boxcar",
+  "spectrum_detrend": false,
+  "fft_length": "next_power_of_2",
+  "ground_truth": "results/ubfc_replication_uploaded_v1/subject4/ground_truth_exact_duplicates_only.csv",
+  "display_name": "UBFC subject4 supplemental exact-duplicate branch"
+}

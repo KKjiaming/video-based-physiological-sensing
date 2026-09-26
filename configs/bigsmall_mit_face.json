@@ -1,0 +1,20 @@
+{
+  "experiment": "bigsmall_mit_face_demo",
+  "video": "data/mit_face.mp4",
+  "output_dir": "results/bigsmall_mit_face_demo",
+  "fps": 25.0,
+  "crop_xywh": [0, 32, 528, 528],
+  "resampling": "nearest_source_pts_to_uniform_25_hz",
+  "big_size": 144,
+  "small_size": 9,
+  "frame_depth": 3,
+  "batch_size": 30,
+  "detrend_lambda": 100,
+  "filter_order": 1,
+  "pulse_band_hz": [0.6, 3.3],
+  "resp_band_hz": [0.13, 0.5],
+  "spectrum_window": "boxcar",
+  "spectrum_detrend": false,
+  "fft_length": "next_power_of_2",
+  "ground_truth": null
+}

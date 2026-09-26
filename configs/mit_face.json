@@ -1,0 +1,18 @@
+{
+  "experiment": "mtts_mit_face_demo",
+  "video": "data/mit_face.mp4",
+  "weights": "third_party/MTTS-CAN/mtts_can.hdf5",
+  "output_dir": "results/mtts_mit_face_demo",
+  "fps": 30.0,
+  "crop_xywh": [0, 32, 528, 528],
+  "rotate_clockwise": false,
+  "frame_depth": 10,
+  "batch_size": 100,
+  "detrend_lambda": 100,
+  "pulse_band_hz": [0.75, 2.5],
+  "resp_band_hz": [0.08, 0.5],
+  "filter_order": 1,
+  "spectrum_window": "hann",
+  "minimum_rr_duration_s": 30,
+  "ground_truth": null
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "software_check_only",
+  "torch": "2.0.1+cu117",
+  "device": "cpu",
+  "strict_load": "passed",
+  "all_named_weights_match": true,
+  "parameters": 2142478,
+  "input_shapes": [
+    [
+      6,
+      3,
+      144,
+      144
+    ],
+    [
+      6,
+      3,
+      9,
+      9
+    ]
+  ],
+  "output_shapes": [
+    [
+      6,
+      12
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      1
+    ]
+  ],
+  "outputs": [
+    "AU logits (not interpreted)",
+    "pulse difference",
+    "respiration difference"
+  ],
+  "weight_sha256": "8789820ed61519337f86e5ae44abc2e099c66a3992fd5c103a995dd397a8143a",
+  "tensor_count": 32,
+  "original_repo": {
+    "strict_load": "passed",
+    "weight_sha256": "c467d5b17ee83d52af2fdafa959945f4ac5f9bda254115c37b8c9017a2b9c0a3",
+    "output_shapes": [
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "all_finite": true
+  },
+  "original_vs_toolbox_tensor_max_abs_difference": 0.5782544612884521,
+  "original_vs_toolbox_output_max_abs_difference": 2.5764644145965576
+}

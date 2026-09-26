@@ -1,0 +1,30 @@
+{
+  "experiment": "mtts_ubfc_uploaded_subject5",
+  "video": "data/ubfc_subject5/input_30hz_replication_v1.avi",
+  "weights": "third_party/MTTS-CAN/mtts_can.hdf5",
+  "output_dir": "results/ubfc_replication_uploaded_v1/subject5/mtts",
+  "fps": 30.0,
+  "crop_xywh": [
+    220,
+    45,
+    300,
+    300
+  ],
+  "rotate_clockwise": false,
+  "frame_depth": 10,
+  "batch_size": 100,
+  "detrend_lambda": 100,
+  "pulse_band_hz": [
+    0.75,
+    2.5
+  ],
+  "resp_band_hz": [
+    0.08,
+    0.5
+  ],
+  "filter_order": 1,
+  "spectrum_window": "hann",
+  "minimum_rr_duration_s": 30,
+  "ground_truth": "results/ubfc_replication_uploaded_v1/subject5/ground_truth_exact_duplicates_only.csv",
+  "display_name": "UBFC subject5 supplemental exact-duplicate branch"
+}

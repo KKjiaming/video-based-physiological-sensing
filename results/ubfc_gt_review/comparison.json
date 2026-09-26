@@ -1,0 +1,85 @@
+{
+  "kind": "single_public_sample_contact_ppg_evaluation",
+  "selection": "whole uploaded recording; two fixed non-overlapping 30s windows",
+  "respiration": "no corresponding ground truth; not evaluated",
+  "synchronization": "container PTS for video, original GT timestamps, fixed zero offset; no independently measured clock correction",
+  "methods": {
+    "MTTS-CAN": {
+      "status": "evaluated",
+      "window_s": 30,
+      "band_hz": [
+        0.75,
+        2.5
+      ],
+      "valid_windows": 2,
+      "windows": [
+        {
+          "start_s": 0.0,
+          "end_exclusive_s": 30.0,
+          "status": "valid",
+          "predicted_per_min": 88.0,
+          "reference_waveform_derived_per_min": 88.0,
+          "error_per_min": 0.0,
+          "waveform_pearson_no_lag": 0.12692157904678306,
+          "device_hr_median_bpm_for_context": 101.0
+        },
+        {
+          "start_s": 30.0,
+          "end_exclusive_s": 60.0,
+          "status": "valid",
+          "predicted_per_min": 92.0,
+          "reference_waveform_derived_per_min": 92.0,
+          "error_per_min": 0.0,
+          "waveform_pearson_no_lag": 0.6112096308164701,
+          "device_hr_median_bpm_for_context": 105.0
+        }
+      ],
+      "metrics": {
+        "mae_per_min": 0.0,
+        "rmse_per_min": 0.0,
+        "bias_per_min": 0.0
+      },
+      "gt_median_interval_s": 0.03399999999999892,
+      "gt_max_interval_s": 0.23899999999999988
+    },
+    "BigSmall": {
+      "status": "evaluated",
+      "window_s": 30,
+      "band_hz": [
+        0.75,
+        2.5
+      ],
+      "valid_windows": 2,
+      "windows": [
+        {
+          "start_s": 0.0,
+          "end_exclusive_s": 30.0,
+          "status": "valid",
+          "predicted_per_min": 88.0,
+          "reference_waveform_derived_per_min": 88.0,
+          "error_per_min": 0.0,
+          "waveform_pearson_no_lag": -0.37077575840014143,
+          "device_hr_median_bpm_for_context": 101.0
+        },
+        {
+          "start_s": 30.0,
+          "end_exclusive_s": 60.0,
+          "status": "valid",
+          "predicted_per_min": 92.0,
+          "reference_waveform_derived_per_min": 92.0,
+          "error_per_min": 0.0,
+          "waveform_pearson_no_lag": -0.6379251008027926,
+          "device_hr_median_bpm_for_context": 105.0
+        }
+      ],
+      "metrics": {
+        "mae_per_min": 0.0,
+        "rmse_per_min": 0.0,
+        "bias_per_min": 0.0
+      },
+      "gt_median_interval_s": 0.03399999999999892,
+      "gt_max_interval_s": 0.23899999999999988
+    }
+  },
+  "reference_caveat": "GT has five gaps over100ms (all under250ms) and same-index timestamps can differ from container time by0.373s. No fitted lag, no discarded windows; waveform correlation has synchronization uncertainty."
+}

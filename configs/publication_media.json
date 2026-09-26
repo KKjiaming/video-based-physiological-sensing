@@ -1,0 +1,49 @@
+{
+  "purpose": "User-selected rendered demonstrations with layout version 2; saved signals and evaluation unchanged, original presentations archived locally.",
+  "demos": [
+    {
+      "subject": "subject3",
+      "video": "results/ubfc_gt_review/video_with_gt.mp4",
+      "preview": "results/ubfc_gt_review/preview.jpg",
+      "duration_s": 30,
+      "frames": 900,
+      "fps": 30,
+      "scope": "offline model outputs and contact PPG reference",
+      "branch": "original subject3 analysis",
+      "layout_version": 2
+    },
+    {
+      "subject": "subject1",
+      "video": "results/ubfc_replication_uploaded_v1/subject1/video_with_reference.mp4",
+      "preview": "results/ubfc_replication_uploaded_v1/subject1/preview.jpg",
+      "duration_s": 30,
+      "frames": 900,
+      "fps": 30,
+      "scope": "offline model outputs and contact PPG reference",
+      "branch": "supplemental exact-duplicate GT cleanup",
+      "layout_version": 2
+    },
+    {
+      "subject": "subject4",
+      "video": "results/ubfc_replication_uploaded_v1/subject4/video_with_reference.mp4",
+      "preview": "results/ubfc_replication_uploaded_v1/subject4/preview.jpg",
+      "duration_s": 30,
+      "frames": 900,
+      "fps": 30,
+      "scope": "offline model outputs and contact PPG reference",
+      "branch": "supplemental exact-duplicate GT cleanup",
+      "layout_version": 2
+    },
+    {
+      "subject": "subject5",
+      "video": "results/ubfc_replication_uploaded_v1/subject5/video_with_reference.mp4",
+      "preview": "results/ubfc_replication_uploaded_v1/subject5/preview.jpg",
+      "duration_s": 30,
+      "frames": 900,
+      "fps": 30,
+      "scope": "offline model outputs and contact PPG reference",
+      "branch": "supplemental exact-duplicate GT cleanup",
+      "layout_version": 2
+    }
+  ]
+}

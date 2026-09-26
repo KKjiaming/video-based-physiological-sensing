@@ -1,0 +1,173 @@
+{
+  "purpose": "Selected unchanged derived results and figures, plus user-requested UBFC demos and thumbnails with refreshed presentation layout; excludes raw recordings and run archives.",
+  "artifacts": {
+    "results/bigsmall_audit.json": {
+      "bytes": 1077,
+      "sha256": "9e15b38ea9ac895d69a89fff3e7f9d5a0910cc4332de829c133fecb12bafa147"
+    },
+    "results/evaluation_software_check.json": {
+      "bytes": 189,
+      "sha256": "167f9cb5ab213efeb52707a9bc1bb8ce324b6de453d1a8e169c655371c6e6e07"
+    },
+    "results/mpu_gt_review/comparison.json": {
+      "bytes": 4183,
+      "sha256": "39e2fedce41c4b384f3a931670a4bf7cd3f6037ec80f6b8cbd716c2ec20a5f2d"
+    },
+    "results/mpu_gt_review/gt_comparison.png": {
+      "bytes": 382796,
+      "sha256": "740d40f5aaacae0f7a417aade295f39bb5e7d1cdc1121e1c55d141070571ca96"
+    },
+    "results/mpu_gt_review/reference_quality.png": {
+      "bytes": 184159,
+      "sha256": "f10f2f5b29f5f1ce37f90aa22cb4498bedf649202f5ece51ca843e814bb4e810"
+    },
+    "results/mtts_serialized_graph_check.json": {
+      "bytes": 98,
+      "sha256": "ef86c174dd5e0d6bdc4644d671e3ced80e039b8ec1ac1c14b62d07d41182a4ca"
+    },
+    "results/signal_math_check.json": {
+      "bytes": 205,
+      "sha256": "8be7aedfc22690d7ff4713f2d9ccce35ac329565744f56ca6b0c5486c28dcb30"
+    },
+    "results/ubfc_diagnostics/audit.json": {
+      "bytes": 10225,
+      "sha256": "b901edebfe2084948f05797da6a8d47ef78ab2e15ebe46add7f33365b8586e45"
+    },
+    "results/ubfc_diagnostics/exact_windows.csv": {
+      "bytes": 2167,
+      "sha256": "a46d56cfa9709b67a72b6977897c705566bb732061d9ce609197c71351f60f48"
+    },
+    "results/ubfc_diagnostics/reference_spectra.png": {
+      "bytes": 360756,
+      "sha256": "0ee8e63080b0bf6643abc2c9a3a9a49e9f5e742851b39156e179b381c66d7c9e"
+    },
+    "results/ubfc_diagnostics/reference_time_frequency.png": {
+      "bytes": 69631,
+      "sha256": "4c6aea281e29bd027fe89eac00f769a2bcb6292a912955eab15359d5b20f9adc"
+    },
+    "results/ubfc_diagnostics/timing_and_device_hr.png": {
+      "bytes": 171317,
+      "sha256": "a915236d43b80692977f431928b400afa3e1a05dd3fe6e5f7b04a5068b991aaa"
+    },
+    "results/ubfc_diagnostics/window1_window_function_spectra.csv": {
+      "bytes": 27718,
+      "sha256": "51b6ad26184a50903b81ce275ec09540837d44cbab55c81cad2a9d019f148285"
+    },
+    "results/ubfc_diagnostics/window2_window_function_spectra.csv": {
+      "bytes": 27782,
+      "sha256": "dfa7643a8de2e63cd48d41804f5645c9c08700dc12f631b45f60d704dec02c9d"
+    },
+    "results/ubfc_diagnostics/window_sensitivity.json": {
+      "bytes": 5334,
+      "sha256": "574d26b9633703284a04373d256a0fe4fd7e34b50c24879160e3285b86fcda28"
+    },
+    "results/ubfc_diagnostics/window_sensitivity.png": {
+      "bytes": 201682,
+      "sha256": "1f4f4426a014d53c4ceee0fa79f7aa31edcbfc7e48446ba0d08ed360cf05a1cd"
+    },
+    "results/ubfc_gt_review/comparison.json": {
+      "bytes": 2753,
+      "sha256": "29ff62ac5c7023b881c50113998203c938f4fb71190b5d46186b8f1ed4daf750"
+    },
+    "results/ubfc_gt_review/gt_comparison.png": {
+      "bytes": 432918,
+      "sha256": "f035076d1aa498b24396daef1b906fcc1f08c0b025a0ab0be4504520de167ed7"
+    },
+    "results/ubfc_gt_review/reference_quality.png": {
+      "bytes": 191306,
+      "sha256": "de626f0803c06d3409531cc40e6d76169d1451ea0545694178a93a5a765d2e6c"
+    },
+    "results/ubfc_replication/protocol_lock.json": {
+      "bytes": 183,
+      "sha256": "ff158790162d4fcf7e9440ae1624e19dbf8539de5d59746724a39075ba159794"
+    },
+    "results/ubfc_replication/subject3_reference_sensitivity_en.pdf": {
+      "bytes": 30913,
+      "sha256": "b06cc79d0b49694ad16b892b41ecfb982e26d5828113c40e9309dc48b97c2bb7"
+    },
+    "results/ubfc_replication/subject3_reference_sensitivity_en.png": {
+      "bytes": 359816,
+      "sha256": "07583629baeedb87c163a2c2f43a4dad5ea13fcf0c634037712a1c1f546c660d"
+    },
+    "results/ubfc_replication/subject3_reference_sensitivity_en.svg": {
+      "bytes": 325324,
+      "sha256": "95a20134902cb3bc73454e4da05b98c611e73662cc0058fe09e4011cecbe8869"
+    },
+    "results/ubfc_replication/subject3_reference_sensitivity_en_metadata.json": {
+      "bytes": 1011,
+      "sha256": "608bc990ad677a0cbaf92f9ae83947a8d5ceccccf0b6cd4fcd85e4a0798e7091"
+    },
+    "results/ubfc_replication_uploaded_v1/comparison.json": {
+      "bytes": 6493,
+      "sha256": "96773c1c475a49426362569ed759a823d937fcf602ce7c745e83a6f7e805f16e"
+    },
+    "results/ubfc_replication_uploaded_v1/new_subject_reference_spectra.pdf": {
+      "bytes": 26180,
+      "sha256": "ca99cc4b10a116ae9f2fcf8e1b4f37b5604f178e66f5564f7a0c9cc88e10e36e"
+    },
+    "results/ubfc_replication_uploaded_v1/new_subject_reference_spectra.png": {
+      "bytes": 216884,
+      "sha256": "b4ad82db08f45359dab465a2d197f8daf534e7f17dd9d2c4a4bba84228c07d49"
+    },
+    "results/ubfc_replication_uploaded_v1/new_subject_waveforms.png": {
+      "bytes": 636838,
+      "sha256": "037f553c57a5a31e622bb051614d15e42dcac6a97df8dd046e5c03f1a3166efa"
+    },
+    "results/ubfc_replication_uploaded_v1/original_strict_status.csv": {
+      "bytes": 1034,
+      "sha256": "b9ac6ca98bcec970f1728cc1885a84593a1b9ad3365943b05bf7e00f0770fa5d"
+    },
+    "results/ubfc_replication_uploaded_v1/protocol_lock.json": {
+      "bytes": 144,
+      "sha256": "8d5198a8e4ccda1361f1eea0c00a60aca5668f9cd4c3d123ab8e41122a716e8e"
+    },
+    "results/ubfc_replication_uploaded_v1/supplemental_exact_windows.csv": {
+      "bytes": 2576,
+      "sha256": "1dcee7c01329fb814e80c0d1e791d824aa18f2dd1dff737bd33f54beded1b2c5"
+    },
+    "results/ubfc_replication_uploaded_v1/supplemental_sensitivity.csv": {
+      "bytes": 764,
+      "sha256": "945bd391f77ffcf2a015cd59e1b98c56dd45ac9f484d6d684f849031e373bc50"
+    },
+    "results/ubfc_replication_uploaded_v1/upload_inventory.json": {
+      "bytes": 3852,
+      "sha256": "41bc429a559d40f291f94ded1e3ed5dbfa0306b4e3db15733631f01118c5889c"
+    },
+    "results/ubfc_replication_uploaded_v1/verification.json": {
+      "bytes": 2846,
+      "sha256": "9123e736140c5ea465ef1353e8d8bd041aa76fba65888eac4824d3170779e340"
+    },
+    "results/ubfc_gt_review/video_with_gt.mp4": {
+      "bytes": 2449746,
+      "sha256": "b0fbeef0229ca44f461f0ee48f1471bdc75601adf2d491239c4feee961f1ae9a"
+    },
+    "results/ubfc_gt_review/preview.jpg": {
+      "bytes": 225431,
+      "sha256": "182f2eee6ce0c5d5fc59b3c14ed4c3b5edd580c22e71d9b4d1a1072ff00321fc"
+    },
+    "results/ubfc_replication_uploaded_v1/subject1/video_with_reference.mp4": {
+      "bytes": 3583533,
+      "sha256": "34460ec2888a9c17e79c1fb9896adc083b6ed3747e647876f0ff24cceaaf9e7b"
+    },
+    "results/ubfc_replication_uploaded_v1/subject1/preview.jpg": {
+      "bytes": 246584,
+      "sha256": "b1e4addb3bf1dc117bb04e84bd1e0537ba62e64fa82e8379e5252d93f84327a7"
+    },
+    "results/ubfc_replication_uploaded_v1/subject4/video_with_reference.mp4": {
+      "bytes": 2735248,
+      "sha256": "fb7771bed567cb669827a99be298178a1315ab900e14f0d66ff28236286635fa"
+    },
+    "results/ubfc_replication_uploaded_v1/subject4/preview.jpg": {
+      "bytes": 234614,
+      "sha256": "ec68d54d2f6d57caff2505b68c1c50d7ae36c48176d576513e9ba2cb249ac32e"
+    },
+    "results/ubfc_replication_uploaded_v1/subject5/video_with_reference.mp4": {
+      "bytes": 3037160,
+      "sha256": "e1c09c0c145f54cb15e933c4756e9df283b334d6a745fd955a573da8f09caad6"
+    },
+    "results/ubfc_replication_uploaded_v1/subject5/preview.jpg": {
+      "bytes": 241494,
+      "sha256": "b7cae2076b0681dcad13aea5825c8003e0adda96793837a79cff3d2a2242bb65"
+    }
+  }
+}

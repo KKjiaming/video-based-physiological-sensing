@@ -1,0 +1,7 @@
+{
+  "kind": "synthetic_software_check_only",
+  "known_clock_offset_alignment": "passed",
+  "window_counts": "passed",
+  "known_rate_error": "passed",
+  "missing_resp_label_gate": "passed"
+}

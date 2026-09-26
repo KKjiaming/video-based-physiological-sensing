@@ -1,0 +1,89 @@
+{
+  "frozen_at_utc": "2026-09-26T03:21:06.211437+00:00",
+  "version": 1,
+  "status": "prospective_small_sample_after_subject3_exploration",
+  "anchor_exploratory_subject": "subject3",
+  "new_subjects": [
+    "subject1",
+    "subject4",
+    "subject5"
+  ],
+  "selection_rule": "First three numerically ordered subjects in the archived official DATASET_2 directory excluding already analyzed subject3: subject1, subject4, subject5. No replacement for missing downloads or failed quality checks. Subject1 GT was downloaded earlier, but no new model results used for selection.",
+  "subjects": [
+    {
+      "id": "subject1",
+      "official_folder": "https://drive.google.com/drive/folders/1q6U7jKRBUtr6N2rVs1vwZ2wuUT2VDoRy",
+      "local_directory": "data/ubfc_subject1"
+    },
+    {
+      "id": "subject4",
+      "official_folder": "https://drive.google.com/drive/folders/1vjXMUmi9CDWvAnrLNoteFNMoxU48Dhzt",
+      "local_directory": "data/ubfc_subject4"
+    },
+    {
+      "id": "subject5",
+      "official_folder": "https://drive.google.com/drive/folders/1y9wb_8Vn1bt34gSMBuc7ux987AzpNEeg",
+      "local_directory": "data/ubfc_subject5"
+    }
+  ],
+  "primary_protocol_file": "configs/ubfc_subject3_protocol.json",
+  "primary_protocol_sha256": "3e449fdafaf8b75cff8765a8de0ad4efe0e254cbf93264a4baf2ef6975d1a0ee",
+  "windows_s": [
+    [
+      0,
+      30
+    ],
+    [
+      30,
+      60
+    ]
+  ],
+  "input_duration": "Entire available recording, as for subject3; report only the two fixed windows, unavailable/incomplete windows remain missing.",
+  "video_timing": "Original container PTS -> nearest uniform30Hz frames -> existing BigSmall25Hz mapping",
+  "gt_timing": "Original third-row timestamps, zero offset, no fitted lag, no extrapolation",
+  "max_gt_gap_s": 0.25,
+  "quality_rules": [
+    "finite three-row GT, strictly increasing timestamps, matching video/GT count",
+    "GT gap >250ms: mark recording failed original quality rule, do not relax",
+    "incomplete fixed window: mark unavailable; never replace subject/window",
+    "all missingness and failures remain in sample inventory"
+  ],
+  "roi_rule": "Fixed square selected from first source video frame before inference or GT spectral inspection; record coordinates and image. No output-based adjustment. Same crop for both models.",
+  "models": {
+    "mtts_config": "configs/mtts_ubfc_subject3.json",
+    "bigsmall_config": "configs/bigsmall_ubfc_subject3.json",
+    "weights": "Same existing checkpoints, no training or tuning"
+  },
+  "primary_metrics": {
+    "filter": "whole common sequence, detrend lambda100, order1 Butterworth filtfilt .75-2.5Hz",
+    "rate": "30s nonoverlap, Hann, constant mean removal, nfft=N, no zero padding, max PSD in .75-2.5Hz",
+    "report": [
+      "per-window prediction HR and contact-PPG-derived HR",
+      "zero-lag signed Pearson",
+      "MAE/RMSE/bias by subject and pooled available new windows",
+      "device HR mean and median auxiliary only"
+    ]
+  },
+  "separate_sensitivity_analysis": {
+    "input": "raw PPG linearly interpolated to common30Hz, same samples for Hann and boxcar, no bandpass, mean removed, no zero padding",
+    "band_hz": [
+      0.75,
+      2.5
+    ],
+    "competing_peak_rule": "Top two interior local PSD maxima in band, >=6bpm apart and second/first power >=0.5, in Hann raw reference; report continuous ratio regardless of flag. Also flag if Hann/boxcar global peak differs by >=4bpm. Exploratory thresholds fixed here for new subjects; not validated quality criteria and never exclusion criteria.",
+    "report": [
+      "all candidate peaks and power ratios",
+      "Hann and boxcar rates side by side",
+      "flag frequency with available and missing denominators"
+    ],
+    "selection": "Never choose method closest to device HR or substitute sensitivity into primary metrics"
+  },
+  "prohibitions": [
+    "no signal negation",
+    "no fitted delay",
+    "no parameter optimization against device HR",
+    "no result-dependent exclusions or replacements",
+    "do not overwrite subject3 original or diagnostic outputs"
+  ],
+  "claim_limit": "Small descriptive replication, no population or model superiority claim"
+}

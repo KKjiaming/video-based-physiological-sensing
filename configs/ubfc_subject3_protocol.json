@@ -1,0 +1,23 @@
+{
+  "dataset": "UBFC-rPPG DATASET_2 subject3",
+  "source_video": "data/ubfc_subject3/vid.avi",
+  "source_gt": "data/ubfc_subject3/ground_truth.txt",
+  "expected_video_bytes": 1659925096,
+  "expected_frames": 1801,
+  "crop_xywh": [230, 20, 260, 260],
+  "selection": "whole uploaded recording, two fixed 30s windows; no result-based selection",
+  "crop_rule": "fixed square selected from source images before prediction",
+  "video_timing": "container PTS preserved; nearest frame to uniform 30Hz, then existing BigSmall 25Hz mapping",
+  "gt_timing": "original third-row timestamps, zero start offset, no fitted delay or temporal warp",
+  "gt_limit": "same-index GT timestamps differ from container PTS by up to about 0.373s; physical synchronization not independently verified",
+  "max_gt_gap_s": 0.25,
+  "gap_rule": "linear interpolation across recorded gaps up to fixed 250ms cap; preserve and flag gaps over100ms, exclude none post hoc",
+  "rate_window_s": 30,
+  "rate_step_s": 30,
+  "evaluation_pulse_band_hz": [0.75, 2.5],
+  "evaluation_spectrum": "Hann, constant detrend, no zero padding",
+  "evaluation_filter_order": 1,
+  "evaluation_detrend_lambda": 100,
+  "resp_ground_truth": false,
+  "training": false
+}

@@ -1,0 +1,204 @@
+{
+  "purpose": "Post hoc diagnostic prompted by first-window multiple peaks. Not preregistered and not used to replace original evaluation.",
+  "processing": "Original PPG timestamps, linear interpolation to 30 Hz; mean removed by periodogram; no bandpass; no zero padding.",
+  "search_band_hz": [
+    0.75,
+    2.5
+  ],
+  "windows": [
+    {
+      "start_s": 0,
+      "end_exclusive_s": 30,
+      "frequency_bin_bpm": 2.0,
+      "spectra": {
+        "hann": {
+          "top_local_peaks": [
+            {
+              "bpm": 88.0,
+              "frequency_hz": 1.4666666666666666,
+              "psd": 3.8767045049526265
+            },
+            {
+              "bpm": 102.0,
+              "frequency_hz": 1.7,
+              "psd": 3.027384134875176
+            },
+            {
+              "bpm": 82.0,
+              "frequency_hz": 1.3666666666666667,
+              "psd": 1.8807666528445277
+            },
+            {
+              "bpm": 108.0,
+              "frequency_hz": 1.8,
+              "psd": 0.9595375486095561
+            },
+            {
+              "bpm": 94.0,
+              "frequency_hz": 1.5666666666666667,
+              "psd": 0.6252289193580953
+            },
+            {
+              "bpm": 76.0,
+              "frequency_hz": 1.2666666666666666,
+              "psd": 0.286921146396448
+            }
+          ]
+        },
+        "boxcar": {
+          "top_local_peaks": [
+            {
+              "bpm": 102.0,
+              "frequency_hz": 1.7,
+              "psd": 4.051690416001322
+            },
+            {
+              "bpm": 88.0,
+              "frequency_hz": 1.4666666666666666,
+              "psd": 3.406767712008104
+            },
+            {
+              "bpm": 82.0,
+              "frequency_hz": 1.3666666666666667,
+              "psd": 1.606516436124494
+            },
+            {
+              "bpm": 94.0,
+              "frequency_hz": 1.5666666666666667,
+              "psd": 1.3645592524098207
+            },
+            {
+              "bpm": 108.0,
+              "frequency_hz": 1.8,
+              "psd": 1.0356751985723103
+            },
+            {
+              "bpm": 76.0,
+              "frequency_hz": 1.2666666666666666,
+              "psd": 0.42345785513362055
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_s": 30,
+      "end_exclusive_s": 60,
+      "frequency_bin_bpm": 2.0,
+      "spectra": {
+        "hann": {
+          "top_local_peaks": [
+            {
+              "bpm": 92.0,
+              "frequency_hz": 1.5333333333333332,
+              "psd": 4.60991522785058
+            },
+            {
+              "bpm": 106.0,
+              "frequency_hz": 1.7666666666666666,
+              "psd": 0.934467040038074
+            },
+            {
+              "bpm": 100.0,
+              "frequency_hz": 1.6666666666666667,
+              "psd": 0.43682201165355244
+            },
+            {
+              "bpm": 80.0,
+              "frequency_hz": 1.3333333333333333,
+              "psd": 0.04884651730112885
+            },
+            {
+              "bpm": 76.0,
+              "frequency_hz": 1.2666666666666666,
+              "psd": 0.01679920962936796
+            },
+            {
+              "bpm": 70.0,
+              "frequency_hz": 1.1666666666666667,
+              "psd": 0.015584051775922196
+            }
+          ]
+        },
+        "boxcar": {
+          "top_local_peaks": [
+            {
+              "bpm": 92.0,
+              "frequency_hz": 1.5333333333333332,
+              "psd": 5.436705206554651
+            },
+            {
+              "bpm": 86.0,
+              "frequency_hz": 1.4333333333333333,
+              "psd": 1.6964320794104817
+            },
+            {
+              "bpm": 104.0,
+              "frequency_hz": 1.7333333333333334,
+              "psd": 1.3012886561797152
+            },
+            {
+              "bpm": 110.0,
+              "frequency_hz": 1.8333333333333333,
+              "psd": 0.36266933494732156
+            },
+            {
+              "bpm": 76.0,
+              "frequency_hz": 1.2666666666666666,
+              "psd": 0.3079320798760044
+            },
+            {
+              "bpm": 80.0,
+              "frequency_hz": 1.3333333333333333,
+              "psd": 0.2797027294107043
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "fixed_10s_cross_checks": [
+    {
+      "start_s": 0,
+      "end_exclusive_s": 10,
+      "ppg_hann_peak_bpm": 96.0,
+      "device_median_bpm": 96.0,
+      "bin_width_bpm": 6.0
+    },
+    {
+      "start_s": 10,
+      "end_exclusive_s": 20,
+      "ppg_hann_peak_bpm": 102.00000000000001,
+      "device_median_bpm": 101.0,
+      "bin_width_bpm": 6.0
+    },
+    {
+      "start_s": 20,
+      "end_exclusive_s": 30,
+      "ppg_hann_peak_bpm": 102.00000000000001,
+      "device_median_bpm": 102.0,
+      "bin_width_bpm": 6.0
+    },
+    {
+      "start_s": 30,
+      "end_exclusive_s": 40,
+      "ppg_hann_peak_bpm": 102.00000000000001,
+      "device_median_bpm": 106.0,
+      "bin_width_bpm": 6.0
+    },
+    {
+      "start_s": 40,
+      "end_exclusive_s": 50,
+      "ppg_hann_peak_bpm": 90.0,
+      "device_median_bpm": 108.0,
+      "bin_width_bpm": 6.0
+    },
+    {
+      "start_s": 50,
+      "end_exclusive_s": 60,
+      "ppg_hann_peak_bpm": 90.0,
+      "device_median_bpm": 94.0,
+      "bin_width_bpm": 6.0
+    }
+  ]
+}

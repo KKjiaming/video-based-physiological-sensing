@@ -1,0 +1,5 @@
+{
+  "kind": "software_check_only",
+  "serialized_vs_source_max_abs_error": 0.0,
+  "passed": true
+}

@@ -1,0 +1,13 @@
+subject,model,branch,start_s,end_exclusive_s,status,predicted_per_min,reference_waveform_derived_per_min,error_per_min,waveform_pearson_no_lag,device_hr_median_bpm,device_hr_mean_bpm,device_stats_source,fs_hz,samples,gt_exact_duplicate_removed_index,reference_peak_hz,prediction_peak_hz,recomputed_pearson,phase_at_reference_peak_deg,positive_cumsum_max_abs_error
+subject1,mtts,supplemental_exact_duplicate_cleanup,0.0,30.0,valid,106.0,106.0,0.0,0.11033485834866637,104.0,103.83183427282977,"original released samples in [0,30)",30.0,900,495,1.7666666666666666,1.7666666666666666,0.11033485834866637,-85.58627917594094,0.0
+subject1,mtts,supplemental_exact_duplicate_cleanup,30,60,unavailable_incomplete_30s_window,,,,,,,,,,,,,,,
+subject1,bigsmall,supplemental_exact_duplicate_cleanup,0.0,30.0,valid,106.0,106.0,0.0,0.26198910268906167,104.0,103.83183427282977,"original released samples in [0,30)",25.0,750,495,1.7666666666666666,1.7666666666666666,0.26198910268906167,61.78140040299943,0.0
+subject1,bigsmall,supplemental_exact_duplicate_cleanup,30,60,unavailable_incomplete_30s_window,,,,,,,,,,,,,,,
+subject4,mtts,supplemental_exact_duplicate_cleanup,0.0,30.0,valid,98.0,98.0,0.0,-0.0501842875247692,113.0,111.52721533258173,"original released samples in [0,30)",30.0,900,858,1.6333333333333333,1.6333333333333333,-0.0501842875247692,110.05321685742305,0.0
+subject4,mtts,supplemental_exact_duplicate_cleanup,30,60,unavailable_incomplete_30s_window,,,,,,,,,,,,,,,
+subject4,bigsmall,supplemental_exact_duplicate_cleanup,0.0,30.0,valid,98.0,98.0,0.0,-0.04228741605777821,113.0,111.52721533258173,"original released samples in [0,30)",25.0,750,858,1.6333333333333333,1.6333333333333333,-0.04228741605777821,-82.85045134285717,0.0
+subject4,bigsmall,supplemental_exact_duplicate_cleanup,30,60,unavailable_incomplete_30s_window,,,,,,,,,,,,,,,
+subject5,mtts,supplemental_exact_duplicate_cleanup,0.0,30.0,valid,98.0,98.0,0.0,0.4857943305261109,99.0,99.48277715565509,"original released samples in [0,30)",30.0,900,20,1.6333333333333333,1.6333333333333333,0.4857943305261109,66.61877447932433,0.0
+subject5,mtts,supplemental_exact_duplicate_cleanup,30,60,unavailable_incomplete_30s_window,,,,,,,,,,,,,,,
+subject5,bigsmall,supplemental_exact_duplicate_cleanup,0.0,30.0,valid,98.0,98.0,0.0,-0.5203416601464789,99.0,99.48277715565509,"original released samples in [0,30)",25.0,750,20,1.6333333333333333,1.6333333333333333,-0.5203416601464789,-118.08515265558154,0.0
+subject5,bigsmall,supplemental_exact_duplicate_cleanup,30,60,unavailable_incomplete_30s_window,,,,,,,,,,,,,,,

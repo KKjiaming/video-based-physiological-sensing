@@ -1,0 +1,30 @@
+{
+  "experiment": "mtts_mpu_sample",
+  "video": "data/mpu_sample/first121_30hz.avi",
+  "weights": "third_party/MTTS-CAN/mtts_can.hdf5",
+  "output_dir": "results/mtts_mpu_sample",
+  "fps": 30.0,
+  "crop_xywh": [
+    190,
+    70,
+    260,
+    260
+  ],
+  "rotate_clockwise": false,
+  "frame_depth": 10,
+  "batch_size": 100,
+  "detrend_lambda": 100,
+  "pulse_band_hz": [
+    0.75,
+    2.5
+  ],
+  "resp_band_hz": [
+    0.08,
+    0.5
+  ],
+  "filter_order": 1,
+  "spectrum_window": "hann",
+  "minimum_rr_duration_s": 30,
+  "ground_truth": "data/mpu_sample/ground_truth.csv",
+  "display_name": "MPU-rPPG public sample, opening 121 seconds"
+}

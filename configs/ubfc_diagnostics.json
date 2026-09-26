@@ -1,0 +1,10 @@
+{
+  "kind": "read_only_diagnostic_not_protocol_optimization",
+  "windows_s": [[0,30],[30,60]],
+  "primary_band_hz": [0.75,2.5],
+  "native_lomb_grid_hz": [0.5,4.0,0.001],
+  "spectra_stages": ["raw_interpolated", "detrended", "existing_filtered"],
+  "clock_counterfactuals": ["original_gt_timestamps", "same_index_container_pts", "nominal30_index_only"],
+  "rules": ["preserve old artifacts byte for byte", "no model inference or tuning", "no delay search", "no polarity flip", "dense spectral grid is diagnostic only, not improved physical resolution"],
+  "polarity_checks": ["official label forward difference", "stored raw head equals exported difference", "positive cumulative sum matches saved integrated signal", "saved filtering matches configured processing", "cross-spectrum phase at primary GT bin without shifting"]
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "reference_PPG_sensitivity_only_not_model_comparison",
+  "source": "Existing raw-reference PSD CSVs; primary evaluation unchanged",
+  "normalization": "Each curve divided by its own maximum PSD within 45-150 bpm",
+  "scope": "Two windows from one recording, UBFC subject3; not a dataset-wide result",
+  "comparison_limit": "Peak locations and relative within-curve shape; absolute PSD not comparable",
+  "peaks": [
+    {
+      "window_s": [
+        0,
+        30
+      ],
+      "hann_bpm": 88.0,
+      "boxcar_bpm": 102.0,
+      "hann_psd_divisor": 3.8767045049526265,
+      "boxcar_psd_divisor": 4.051690416001322,
+      "source_csv": "results/ubfc_diagnostics/window1_window_function_spectra.csv"
+    },
+    {
+      "window_s": [
+        30,
+        60
+      ],
+      "hann_bpm": 92.0,
+      "boxcar_bpm": 92.0,
+      "hann_psd_divisor": 4.60991522785058,
+      "boxcar_psd_divisor": 5.436705206554651,
+      "source_csv": "results/ubfc_diagnostics/window2_window_function_spectra.csv"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "MTTS-CAN": {
+    "url": "https://github.com/xliucs/MTTS-CAN",
+    "commit": "89ffe818e1701ebcc156d4193657258e506eb781",
+    "license": "MIT, Copyright (c) 2020 Xin Liu",
+    "weight": "mtts_can.hdf5",
+    "weight_sha256": "74d53d039bb7adc08309a1b389537a0c79fddc479b064dd660ef7007fb47d022",
+    "weight_bytes": 11364688
+  },
+  "BigSmall": {
+    "url": "https://github.com/girishvn/BigSmall",
+    "commit": "0e6c391c26ed66519340c8b9e85689f827518a42",
+    "license": "MIT",
+    "weight": "code/pretrained_models/BP4D_BigSmall_Multitask_Clip3_Split1_Epoch4.pth",
+    "weight_sha256": "c467d5b17ee83d52af2fdafa959945f4ac5f9bda254115c37b8c9017a2b9c0a3",
+    "weight_bytes": 8580229,
+    "sparse_paths": [
+      "/README.md",
+      "/LICENSE",
+      "/code/README.md",
+      "/code/neural_methods/model/BigSmall_models.py",
+      "/code/neural_methods/trainer/BigSmallMultitaskTrainer.py",
+      "/code/configs/BP4D_BIGSMALL_MULTITASK_SPLIT1.yaml",
+      "/code/preprocess_bp4d_bigsmall.py",
+      "/code/pretrained_models/BP4D_BigSmall_Multitask_Clip3_Split1_Epoch4.pth"
+    ]
+  },
+  "rPPG-Toolbox": {
+    "url": "https://github.com/ubicomplab/rPPG-Toolbox",
+    "commit": "b7500b848f84ad7f86e277b4612563b69f4f88f9",
+    "license": "Responsible AI Source Code License v1.1",
+    "weight": "final_model_release/BP4D_BigSmall_Multitask_Fold1.pth",
+    "weight_sha256": "8789820ed61519337f86e5ae44abc2e099c66a3992fd5c103a995dd397a8143a",
+    "weight_bytes": 8580229,
+    "sparse_paths": [
+      "/README.md",
+      "/LICENSE",
+      "/config.py",
+      "/requirements.txt",
+      "/neural_methods/model/BigSmall.py",
+      "/neural_methods/model/TS_CAN.py",
+      "/neural_methods/trainer/BigSmallTrainer.py",
+      "/dataset/data_loader/BP4DPlusBigSmallLoader.py",
+      "/dataset/data_loader/BaseLoader.py",
+      "/dataset/BP4D_BigSmall_Subject_Splits/",
+      "/evaluation/",
+      "/configs/train_configs/BP4D_BP4D_BIGSMALL_FOLD1.yaml",
+      "/final_model_release/BP4D_BigSmall_Multitask_Fold1.pth"
+    ]
+  }
+}
