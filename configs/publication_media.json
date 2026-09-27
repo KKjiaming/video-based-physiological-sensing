@@ -1,5 +1,5 @@
 {
-  "purpose": "User-selected rendered demonstrations with layout version 2; saved signals and evaluation unchanged, original presentations archived locally.",
+  "purpose": "User-selected rendered demonstrations; subject3 uses presentation version 3 and a GIF retaining every source frame. Saved signals and evaluation unchanged, original presentations archived locally.",
   "demos": [
     {
       "subject": "subject3",
@@ -10,19 +10,28 @@
       "fps": 30,
       "scope": "offline model outputs and contact PPG reference",
       "branch": "original subject3 analysis",
-      "layout_version": 2,
-      "animation": "results/ubfc_gt_review/demo-preview.gif",
+      "layout_version": 3,
+      "animation": "results/ubfc_gt_review/demo-30fps.gif",
       "animation_encoding": {
         "width": 880,
         "height": 507,
-        "fps": 5,
-        "frames": 40,
+        "fps": 30,
+        "frames": 240,
         "duration_s": 8,
         "loop": 0,
-        "palette_colors": 96,
+        "palette_colors": 128,
         "playback_speed": 1,
         "source_start_s": 10,
-        "source_end_s": 18
+        "source_end_s": 18,
+        "dither": "none",
+        "source_frame_start": 300,
+        "source_frame_end_exclusive": 540,
+        "frames_dropped": 0,
+        "frames_duplicated": 0,
+        "gif_frame_delays_ms": [
+          30,
+          40
+        ]
       }
     },
     {

@@ -77,7 +77,7 @@ def main():
             xx=px+round((now-start)/10*pw);cv2.line(canvas,(xx,py),(xx,py+ph),(255,255,255),2)
             label(canvas,'Time (s) | amplitude: full-clip z-score',(px,py+ph+43),.47)
         label(canvas,'Offline analysis: traces and window HR use future frames. Fixed zero lag; no sign correction.',(24,711),.56)
-        label(canvas,'Data: Bobbia et al., UBFC-rPPG, Pattern Recognition Letters. Local research visualization.',(24,743),.52)
+        label(canvas,'Dataset: UBFC-rPPG | Subject 3',(24,743),.52)
         if k==450:cv2.imwrite(str(out/'preview.jpg'),canvas)
         proc.stdin.write(canvas.tobytes())
     cap.release();proc.stdin.close();assert proc.wait()==0

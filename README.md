@@ -2,9 +2,9 @@
 
 Pulse and respiration estimation from facial videos with pretrained **MTTS-CAN** and **BigSmall**.
 
-[![Watch the demonstration: video, face ROI, model predictions and contact PPG](results/ubfc_gt_review/demo-preview.gif)](results/ubfc_gt_review/video_with_gt.mp4)
+[![Watch the demonstration: video, face ROI, model predictions and contact PPG](results/ubfc_gt_review/demo-30fps.gif)](results/ubfc_gt_review/video_with_gt.mp4)
 
-**8-second preview (10–18 s) · [Full 30-second video](results/ubfc_gt_review/video_with_gt.mp4) · [Static preview](results/ubfc_gt_review/preview.jpg)** — actual face crop, two model predictions, and the contact PPG reference. The GIF plays at original speed with reduced frame rate; heart-rate values use the full 30-second window. Offline analysis; no fitted delay or signal flip.
+**8-second preview (10–18 s) · [Full 30-second video](results/ubfc_gt_review/video_with_gt.mp4) · [Static preview](results/ubfc_gt_review/preview.jpg)** — actual face crop, two model predictions, and the contact PPG reference. The GIF retains all 240 source frames at 30 fps; heart-rate values use the full 30-second window. Offline analysis; no fitted delay or signal flip.
 
 More demos: [Subject 1](results/ubfc_replication_uploaded_v1/subject1/video_with_reference.mp4) · [Subject 4](results/ubfc_replication_uploaded_v1/subject4/video_with_reference.mp4) · [Subject 5](results/ubfc_replication_uploaded_v1/subject5/video_with_reference.mp4)
 
@@ -20,7 +20,7 @@ Fixed 30-second Hann estimates, in **bpm**:
 | Subject 4* | 0–30 | 98 | 98 | 98 | 113 |
 | Subject 5* | 0–30 | 98 | 98 | 98 | 99 |
 
-**Matching 2 bpm frequency bins does not prove accurate heart rate or matching waveforms.** Subject 4 has competing reference peaks and near-zero waveform correlations; BigSmall correlations change sign across recordings. Device HR discrepancies remain unresolved. Respiration outputs have no corresponding ground truth.
+**Matching 2 bpm frequency bins does not prove accurate heart rate or matching waveforms.** Subject 4 has competing reference peaks and near-zero waveform correlations; BigSmall correlations change sign across recordings. Device HR discrepancies remain unresolved, and physical clock alignment between video and contact PPG has not been independently verified. Respiration outputs have no corresponding ground truth.
 
 \* Separately frozen supplemental analysis removes one exactly repeated GT record per recording. Original strict failures remain recorded; incomplete second windows are not evaluated. [Full results and protocol](docs/ubfc_uploaded_replication.md).
 

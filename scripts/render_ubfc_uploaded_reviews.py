@@ -1,5 +1,6 @@
 """Render saved UBFC review arrays without recomputing signals, fitting delay, or changing sign."""
 import argparse,json,shutil,subprocess
+from datetime import datetime, timezone
 import cv2,numpy as np
 from signal_utils import ROOT
 OUT=ROOT/'results/ubfc_replication_uploaded_v1'
@@ -12,7 +13,7 @@ def render(subject, replace_existing=False):
         source=ROOT/'data/ubfc_subject3/input_30hz.avi'
         target=base/'video_with_gt.mp4';metadata_path=base/'video_metadata.json'
         subtitle='Original subject3 analysis | fixed first 30-second window'
-        footer='Data: Bobbia et al., UBFC-rPPG. Contact PPG reference; physical clock alignment remains uncertain.'
+        footer='Dataset: UBFC-rPPG | Subject 3'
     else:
         base=OUT/subject;timing=json.loads((base/'timing_audit.json').read_text())
         source=ROOT/f'data/ubfc_{subject}/input_30hz_replication_v1.avi'
@@ -30,8 +31,8 @@ def render(subject, replace_existing=False):
         ev=json.loads(evaluation_path.read_text())['signals']['pulse']['windows'][0]
         items.append((title,color,arrays,ev))
     cap=cv2.VideoCapture(str(source))
-    temporary=base/'video_layout_v2_pending.mp4'
-    preview_temp=base/'preview_layout_v2_pending.jpg'
+    temporary=base/'video_layout_v3_pending.mp4'
+    preview_temp=base/'preview_layout_v3_pending.jpg'
     proc=subprocess.Popen(['ffmpeg','-v','error','-n','-f','rawvideo','-pix_fmt','bgr24','-s','1320x760','-r','30','-i','-','-an','-c:v','libx264','-preset','fast','-crf','20','-pix_fmt','yuv420p','-movflags','+faststart',str(temporary)],stdin=subprocess.PIPE)
     for k in range(900):
         ok,frame=cap.read();assert ok
@@ -62,7 +63,7 @@ def render(subject, replace_existing=False):
     cap.release();proc.stdin.close();assert proc.wait()==0
     probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-select_streams','v:0','-show_entries','stream=width,height,nb_frames,duration,avg_frame_rate','-of','json',str(temporary)]))
     stream=probe['streams'][0];assert int(stream['nb_frames'])==900 and abs(float(stream['duration'])-30)<1e-6
-    archive=ROOT/'results/video_layout_archive'/subject
+    archive=ROOT/'results/video_layout_archive'/subject/datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
     archive.mkdir(parents=True,exist_ok=True)
     for old in [target,base/'preview.jpg',metadata_path]:
         if old.exists():
@@ -70,7 +71,7 @@ def render(subject, replace_existing=False):
             if backup.exists():raise FileExistsError('Archive already exists; refusing to overwrite '+str(backup))
             shutil.copy2(old,backup)
     temporary.replace(target);preview_temp.replace(base/'preview.jpg')
-    (metadata_path).write_text(json.dumps({'subject':subject,'stream':stream,'waveforms':'unchanged saved model and contact PPG display arrays; fixed original processing','normalization':'each full common clip z-scored independently, display only; visual amplitude clipped +/-3','no_lag_fit':True,'no_sign_flip':True,'GT_removed_indices':timing['dropped_exact_duplicate_gt_indices'],'layout_version':2,'chart_bounds_xywh':[[690,190,600,140],[690,490,600,140]],'caption_baseline_to_next_title_baseline_px':57,'old_presentation_archive':str(archive.relative_to(ROOT))},indent=2))
+    (metadata_path).write_text(json.dumps({'subject':subject,'stream':stream,'waveforms':'unchanged saved model and contact PPG display arrays; fixed original processing','normalization':'each full common clip z-scored independently, display only; visual amplitude clipped +/-3','no_lag_fit':True,'no_sign_flip':True,'GT_removed_indices':timing['dropped_exact_duplicate_gt_indices'],'layout_version':3,'chart_bounds_xywh':[[690,190,600,140],[690,490,600,140]],'caption_baseline_to_next_title_baseline_px':57,'old_presentation_archive':str(archive.relative_to(ROOT))},indent=2))
     print('Rendered '+subject,flush=True)
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)

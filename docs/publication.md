@@ -29,7 +29,7 @@ The `.gitignore` uses a root allowlist and an explicit results allowlist. New re
 
 ## Selected video demonstrations
 
-The README leads with a lightweight looping GIF excerpt (10–18 seconds) of the subject3 demonstration, linked to the full-quality 30-second video. The GIF retains original playback speed at a reduced frame rate; it does not change the analysis. The user also selected preserving the current video demonstrations in the public project; the related subjects 1, 4 and 5 are linked alongside it. `configs/publication_media.json` records the exact files; `.gitignore` permits only these named videos after the general media exclusion rule.
+The README leads with a looping GIF excerpt (10–18 seconds) of the subject3 demonstration, linked to the full-quality 30-second video. The GIF retains all 240 source frames at the original 30 fps. The subject3 footer uses a concise dataset label; the clock-alignment limitation remains in the README and experiment reports. These presentation changes do not change the analysis. The user also selected preserving the current video demonstrations in the public project; the related subjects 1, 4 and 5 are linked alongside it. `configs/publication_media.json` records the exact files; `.gitignore` permits only these named videos after the general media exclusion rule.
 
 | Demo | Branch | Length |
 |---|---|---|
