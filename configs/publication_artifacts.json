@@ -169,9 +169,9 @@
       "bytes": 241494,
       "sha256": "b7cae2076b0681dcad13aea5825c8003e0adda96793837a79cff3d2a2242bb65"
     },
-    "results/ubfc_gt_review/demo.gif": {
-      "bytes": 7042331,
-      "sha256": "417679af85be378a27daecab467b00d8b8beed71b29c360082fde4c19f8ded52"
+    "results/ubfc_gt_review/demo-preview.gif": {
+      "bytes": 2079133,
+      "sha256": "a316882dba181eb455847dcdaafec1a8bf1e07a0be764e63f1c4316c678955e1"
     }
   }
 }

@@ -11,16 +11,18 @@
       "scope": "offline model outputs and contact PPG reference",
       "branch": "original subject3 analysis",
       "layout_version": 2,
-      "animation": "results/ubfc_gt_review/demo.gif",
+      "animation": "results/ubfc_gt_review/demo-preview.gif",
       "animation_encoding": {
         "width": 880,
         "height": 507,
         "fps": 5,
-        "frames": 150,
-        "duration_s": 30,
+        "frames": 40,
+        "duration_s": 8,
         "loop": 0,
-        "palette_colors": 128,
-        "playback_speed": 1
+        "palette_colors": 96,
+        "playback_speed": 1,
+        "source_start_s": 10,
+        "source_end_s": 18
       }
     },
     {

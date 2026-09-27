@@ -2,9 +2,9 @@
 
 Pulse and respiration estimation from facial videos with pretrained **MTTS-CAN** and **BigSmall**.
 
-[![Watch the demonstration: video, face ROI, model predictions and contact PPG](results/ubfc_gt_review/demo.gif)](results/ubfc_gt_review/video_with_gt.mp4)
+[![Watch the demonstration: video, face ROI, model predictions and contact PPG](results/ubfc_gt_review/demo-preview.gif)](results/ubfc_gt_review/video_with_gt.mp4)
 
-**30-second demo above · [Watch the full-quality video](results/ubfc_gt_review/video_with_gt.mp4)** — actual face crop, two model predictions, and the contact PPG reference. The GIF plays at original speed with reduced frame rate. Offline analysis; no fitted delay or signal flip.
+**8-second preview (10–18 s) · [Full 30-second video](results/ubfc_gt_review/video_with_gt.mp4) · [Static preview](results/ubfc_gt_review/preview.jpg)** — actual face crop, two model predictions, and the contact PPG reference. The GIF plays at original speed with reduced frame rate; heart-rate values use the full 30-second window. Offline analysis; no fitted delay or signal flip.
 
 More demos: [Subject 1](results/ubfc_replication_uploaded_v1/subject1/video_with_reference.mp4) · [Subject 4](results/ubfc_replication_uploaded_v1/subject4/video_with_reference.mp4) · [Subject 5](results/ubfc_replication_uploaded_v1/subject5/video_with_reference.mp4)
 
