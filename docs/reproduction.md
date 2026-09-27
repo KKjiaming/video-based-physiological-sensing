@@ -49,14 +49,14 @@ See [methods](methods.md), [publication scope](publication.md), and [source attr
 
 ## README animation
 
-The inline GIF is a presentation-only excerpt of the subject3 MP4: seconds 10–18 at original speed, 880 pixels wide, 30 fps with all 240 source frames retained, looping. The complete 30-second MP4 remains available at full quality; displayed heart rates still use the original 30-second window. No inference or evaluation is rerun. From the repository root:
+The inline GIF is a presentation-only conversion of the complete subject3 MP4: all 30 seconds at original speed, 880 pixels wide, 30 fps with all 900 source frames retained, looping. The complete 30-second MP4 remains available at full quality; displayed heart rates still use the original 30-second window. No inference or evaluation is rerun. From the repository root:
 
 ```bash
 ffmpeg -hide_banner -loglevel error -nostdin -n -threads 2 \
-  -ss 10 -t 8 -i results/ubfc_gt_review/video_with_gt.mp4 \
+  -i results/ubfc_gt_review/video_with_gt.mp4 \
   -filter_complex_threads 1 \
   -filter_complex '[0:v]scale=880:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=128:stats_mode=diff[p];[b][p]paletteuse=dither=none:diff_mode=rectangle' \
-  -vsync 0 -loop 0 -final_delay 3 results/ubfc_gt_review/demo-30fps.gif
+  -vsync 0 -loop 0 -final_delay 3 results/ubfc_gt_review/demo-30s-30fps.gif
 ```
 
-The command refuses to overwrite an existing GIF. No frame-rate filter is applied; `-vsync 0` passes every decoded frame through. GIF stores delays in centiseconds, so frame delays alternate between 30 and 40 ms, totaling exactly 8 seconds for 240 frames.
+The command refuses to overwrite an existing GIF. No frame-rate filter is applied; `-vsync 0` passes every decoded frame through. GIF stores delays in centiseconds, so frame delays alternate between 30 and 40 ms, totaling exactly 30 seconds for 900 frames.

@@ -18,13 +18,16 @@ def main():
               re.compile(r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----'),
               re.compile(r'AKIA[0-9A-Z]{16}')]
     forbidden_suffixes={'.avi','.mp4','.mov','.mkv','.npz','.npy','.pth','.pt','.hdf5','.h5','.ckpt','.safetensors','.response','.xlsx','.log'}
+    # Explicit exception for the user-selected full 30-second, 900-frame GIF.
+    size_limits={'results/ubfc_gt_review/demo-30s-30fps.gif':50*1024*1024}
     total=0;largest=[];links=0
     for name in names:
         p=ROOT/name
         if not p.is_file():issues.append('Missing or non-file candidate: '+name);continue
         if p.is_symlink():issues.append('Review symlink before publication: '+name)
         size=p.stat().st_size;total+=size;largest.append((size,name))
-        if size>10*1024*1024:issues.append('File exceeds the 10 MiB review threshold: '+name)
+        limit=size_limits.get(name,10*1024*1024)
+        if size>limit:issues.append(f'File exceeds the {limit//1024**2} MiB review threshold: '+name)
         if p.suffix.lower() in forbidden_suffixes and name not in demo_videos:issues.append('Local-artifact file type selected: '+name)
         if p.suffix.lower() in {'.py','.sh','.md','.txt','.json','.csv'} or name=='.gitignore':
             text=p.read_text(errors='replace')
