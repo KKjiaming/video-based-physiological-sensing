@@ -10,7 +10,7 @@ def main():
     media=json.loads((ROOT/'configs/publication_media.json').read_text())
     demo_videos={entry['video'] for entry in media['demos']}
     for entry in media['demos']:
-        for key in ['video','preview']:
+        for key in ['video','preview'] + (['animation'] if 'animation' in entry else []):
             if entry[key] not in allowed:issues.append('Selected demo media is ignored: '+entry[key])
     tracked_ignored=git('ls-files','--cached','--ignored','--exclude-standard','-z').split(b'\0')
     issues.extend('Already tracked but now ignored: '+x.decode() for x in tracked_ignored if x)

@@ -148,3 +148,6 @@ Thumbs.db
 !/results/ubfc_replication_uploaded_v1/subject5/
 !/results/ubfc_replication_uploaded_v1/subject5/video_with_reference.mp4
 !/results/ubfc_replication_uploaded_v1/subject5/preview.jpg
+
+# Inline README animation derived from the selected subject3 demo.
+!/results/ubfc_gt_review/demo.gif

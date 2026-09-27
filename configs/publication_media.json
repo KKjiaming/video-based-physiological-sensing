@@ -10,7 +10,18 @@
       "fps": 30,
       "scope": "offline model outputs and contact PPG reference",
       "branch": "original subject3 analysis",
-      "layout_version": 2
+      "layout_version": 2,
+      "animation": "results/ubfc_gt_review/demo.gif",
+      "animation_encoding": {
+        "width": 880,
+        "height": 507,
+        "fps": 5,
+        "frames": 150,
+        "duration_s": 30,
+        "loop": 0,
+        "palette_colors": 128,
+        "playback_speed": 1
+      }
     },
     {
       "subject": "subject1",

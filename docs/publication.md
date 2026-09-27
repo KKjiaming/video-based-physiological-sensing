@@ -10,7 +10,7 @@ The repository presents video-based human physiological sensing through pretrain
 | Public `docs/*.md` | Methods and experiment records, including negative findings and missing windows |
 | `requirements.txt`, `requirements-lock.txt` | Direct requirements and the tested TensorFlow environment versions |
 | `licenses/*-LICENSE.txt` | Exact upstream license notices; third-party code and weights are fetched separately |
-| Explicitly named `results/` files in `.gitignore` | Selected plots, per-window derived metrics, spectral summaries, software checks, and four named rendered UBFC demos with matching thumbnails |
+| Explicitly named `results/` files in `.gitignore` | Selected plots, per-window derived metrics, spectral summaries, software checks, and four named rendered UBFC demos with matching thumbnails and the subject3 README GIF |
 
 The original strict analysis and the supplemental exact-duplicate-cleanup analysis remain distinct. Publishing results does not turn the observed zero error on selected FFT bins into proof of physiological accuracy. No failed windows or negative waveform correlations are removed from the selected summaries.
 
@@ -29,7 +29,7 @@ The `.gitignore` uses a root allowlist and an explicit results allowlist. New re
 
 ## Selected video demonstrations
 
-The README leads with the existing subject3 video and preview. The user also selected preserving the current video demonstrations in the public project; the related subjects 1, 4 and 5 are linked alongside it. `configs/publication_media.json` records the exact files; `.gitignore` permits only these named videos after the general media exclusion rule.
+The README leads with a looping GIF of the complete 30-second subject3 demonstration, linked to the full-quality video. The GIF retains original playback speed at a reduced frame rate; it does not change the analysis. The user also selected preserving the current video demonstrations in the public project; the related subjects 1, 4 and 5 are linked alongside it. `configs/publication_media.json` records the exact files; `.gitignore` permits only these named videos after the general media exclusion rule.
 
 | Demo | Branch | Length |
 |---|---|---|
